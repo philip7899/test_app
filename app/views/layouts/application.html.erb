@@ -3,10 +3,22 @@
 <head>
   <title>Testapp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application", "backstretch" %>
   <%= csrf_meta_tags %>
+
+
+
+
 </head>
 <body>
+
+<script>
+	 $.backstretch([
+	"assets/panoramic_boston.jpg"
+	, "assets/new_york_skyline-wide.jpg"
+	, "assets/providence-warwick-convention.jpg"
+	], {duration: 3000, fade: 750});
+</script>
 
 <div class="navbar navbar-inverse">
 	  <div class="navbar-inner">
