@@ -1,5 +1,7 @@
 Testapp::Application.routes.draw do
 
+  devise_for :users
+
   root :to => 'staticpages#index'
   resources :pics
   resources :votes

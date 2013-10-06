@@ -42,3 +42,4 @@ gem "fog", "~> 1.3.1"
 
 # To use debugger
 # gem 'debugger'
+gem 'devise'
