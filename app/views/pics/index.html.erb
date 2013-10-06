@@ -2,10 +2,15 @@
 	<h1>My Pics</h1>
 
 	<% @pics.each do |pic| %>
-		<div class="box">
+		<div class="span3 box text-center">
 			<h2>
-				Hour: <%= pic.hour %> <br />
+				Hour <%= pic.hour %> <br />
 			</h2>
+
+			<div>
+				<%= image_tag pic.image %>
+			</div>
+
 			<h3>
 				I feel <%= pic.emotion %>
 			</h3>

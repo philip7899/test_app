@@ -4,8 +4,10 @@
 
 	<%= simple_form_for @pic do |f| %>
 		<%= f.input :hour %>
+		<%= f.input :image, :as => :file %>
+		
 		<%= f.input :emotion, :label => 'mood' %>
-		<%= f.input :learned %>
+		<%= f.input :learned, :input_html => {:rows => 10} %>
 		<%= submit_tag "Save", :class => "btn btn-primary btn-large" %>
 	<% end %>
 </div>
