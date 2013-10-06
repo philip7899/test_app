@@ -12,6 +12,12 @@
 			<p>
 				I learned that <%= pic.learned %>
 			</p>
+			<%= link_to 'Vote Up', votes_path(:pic_id => pic.id, :mode => 1), :method => :post %>|
+			<%= link_to 'Vote down', votes_path(:pic_id => pic.id, :mode => -1), :method => :post  %> 
+
+
+
+			<p>Total: <%= pic.votes.sum(&:mode) %> </p>
 		</div>
 	<% end %>
 </div>

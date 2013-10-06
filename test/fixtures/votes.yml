@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mode: 1
+  pic_id: 1
+
+two:
+  mode: 1
+  pic_id: 1
